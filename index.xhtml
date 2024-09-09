@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" xml:lang="en-gb">
+  <head>
+    <!--nomodify-->
+    <meta name="style" content="cs" />
+    <title>COMS30035 - Machine Learning - Computer Science Department UoB</title>
+    <style>
+      table { border-spacing: 2px; border-collapse: separate; }
+      td { margin: 1px; padding: 5px; }
+      table.blank  {vertical-align: top; text-align: left; background: #f1f1f1;}
+      td.blank  {vertical-align: top; text-align: center; background: #cccccc;}
+      tr.blank  {vertical-align: top; text-align: left; background: #cccccc;}
+      td.Rui {vertical-align: top; text-align: left; background: #FFE5B4;}
+      td.lecture {vertical-align: top; text-align: left; background: #ccffc1;}
+      td.dropin {vertical-align: top; text-align: left; background: #ffaaaa;}
+      td.lab {vertical-align: top; text-align: left; background: #bbbbee;}
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <a href="https://www.ole.bris.ac.uk/ultra/courses/_260098_1/cl/outline">BLACKBOARD PAGE</a> |
+      <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=24%2F25&amp;unitCode=COMS30035" target="_blank">UNIT INFO</a> |
+      <h1>COMS30035 - Machine Learning</h1>
+
+
+      <link rel="stylesheet" href="simple.css" />
+      <a id="info"></a>
+      <hr/>
+
+       <h2>News</h2> 
+
+       <p>This page is currently under construction and all materials
+	 accessible from it are liable to change.
+       </p>
+       
+       <hr/>
+       
+      <h2>Unit Information</h2>
+
+      <p>
+	This unit seeks to acquaint students with machine learning
+      algorithms which are important in many modern data and computer
+      science applications. We cover topics such as kernel machines,
+      probabilistic inference, neural networks, HMMs and
+      emsemble models.
+      </p>
+
+
+      <hr/>
+
+      <h2> Staff</h2>
+
+      <p>
+	<a href="https://jcussens.github.io/"
+	     target="_blank">James Cussens (JC)
+	</a>
+      </p>
+
+      <hr/>
+
+      <h2> Teaching Assistants</h2>
+
+      <p> Akin Eker, Siddhant Bansal, Shijia Feng, Omar Emara,
+Saptarshi Sinha, Tianye Wang, Kal Roberts
+      </p>
+
+      <hr/>
+
+      <h2>Unit Materials</h2>
+
+
+<table border="1" style="border-collapse:collapse" cellspacing="1" cellpadding="2">
+
+  <tr>
+    <td><i>Week</i></td>
+    <td><i>Monday lecture, 0900-1000, Queen's 1.15</i></td>
+    <td><i>Wednesday lecture, 0900-1000, Queen's 1.15</i></td>
+    <td><i>Thursday drop-in, 1200-1300, Queen's 1.68</i></td>
+    <td><i>Thursday lab, Weeks 1,2: 1600-1800 MVB1.15. Weeks 3-: 1500-1800, Queen's 1.80</i></td>
+  </tr>
+
+  <tr>
+    <td>1  (w/c 16/09/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect01/lect01.pdf" target="_blank">L01: Unit organisation</a>,
+      <a href="lectures/lect02/lect02.pdf" target="_blank">L02: Machine Learning
+	concepts</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect03/lect03.pdf" target="_blank">L03: Unit topic overview</a>,
+      <a href="lectures/lect04/lect04.pdf" target="_blank">L04: Linear regression, linear
+      discriminant and logistic regression</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      <a href="https://github.com/uob-COMS30035/lab_sheets_public/blob/main/lab1/lab1-intro_to_numpy_scikitlearn.ipynb" target="_blank">Lab01: Introduction to numpy and scikit learn</a>
+    </td>
+  </tr>
+  <tr>
+    <td>2 (w/c 23/09/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect05/lect05.pdf" target="_blank">L05:
+      Introduction to Neural Networks</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect06/lect06.pdf" target="_blank">L06:
+      Training Neural Networks</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab starting at 1600 in MVB1.15
+    </td>
+  </tr>
+  <tr>
+    <td>3 (w/c 30/09/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect07/lect07.pdf" target="_blank">L07: Regression and
+      classification trees</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect08/lect08.pdf" target="_blank">L08: Kernels and Support
+      Vector Machines</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab
+    </td>
+  </tr>
+  <tr>
+    <td>4 (w/c 07/10/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect09/lect09.pdf" target="_blank">L09: Probabilistic
+      Graphical Models</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect10/lect10.pdf" target="_blank">L10: Markov Chain Monte Carlo</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab
+    </td>
+  </tr>
+  <tr>
+    <td>5 (w/c 14/10/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect11/lect11.pdf" target="_blank">L11:
+      k-means and mixtures of Gaussians</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect12/lect12.pdf" target="_blank">L12: The
+      EM algorithm</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab
+    </td>
+  </tr>
+  <tr>
+    <td>6 (w/c 21/10/24) </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      in-class test 1400-1500 in MVB 2.11
+    </td>
+    <td>
+      No lab
+    </td>
+  </tr>
+  <tr>
+    <td>7 (w/c 28/10/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect13/lect13.pdf" target="_blank">L13:
+      Sequential data (HMMs)</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect14/lect14.pdf" target="_blank">L14:
+      Sequential data (LDS)</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab
+    </td>
+  </tr>
+  <tr>
+    <td>8 (w/c 04/11/24) </td>
+    <td class="lecture">
+      <a href="lectures/lect15/lect15.pdf" target="_blank">L15:
+      Ensemble methods</a>
+    </td>
+    <td class="lecture">
+      <a href="lectures/lect16/lect16.pdf" target="_blank">L16:
+      Mixtures of experts / crowdsourcing</a>
+    </td>
+    <td class="dropin">
+      Drop-in
+    </td>
+    <td class="lab">
+      Lab
+    </td>
+  </tr>
+  <tr>
+    <td>9 (w/c 11/11/24) </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No drop-in
+    </td>
+    <td class="lab">
+      Coursework support session (1500-1700)
+    </td>
+  </tr>
+  <tr>
+    <td>10 (w/c 18/11/24) </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No drop-in
+    </td>
+    <td class="lab">
+      Coursework support session (1500-1700)
+    </td>
+  </tr>
+  <tr>
+    <td>11 (w/c 25/11/24) </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No lecture
+    </td>
+    <td>
+      No drop-in
+    </td>
+    <td class="lab">
+      Coursework support session (1500-1700)
+    </td>
+  </tr>
+  <tr>
+    <td>12 (w/c 02/12/24) </td>
+    <td class="lecture">
+      Revision 
+    </td>
+    <td class="lecture">
+      Revision
+    </td>
+    <td>
+      No drop-in
+    </td>
+    <td>
+      No lab
+    </td>
+  </tr>
+</table>
+
+      <hr/>
+
+      <h2>Assessment Details</h2>
+
+      <ul>
+	<li>
+	  If you are doing this unit as a MAJOR (assessment
+	unit <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30083">COMS30083</a>)
+	then you do a mid-term in-class test (worth 30% of the unit)
+	and also coursework during weeks 9-11 (worth 70% of the unit).
+	</li>
+	<li>
+	  If you are doing this unit as a MINOR (assessment
+	unit <a href="https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS30081">COMS30081</a>)
+	then you are assessed by the ML questions in the "Topics in Computer Science"
+	closed-book exam in December (worth 100% of the unit).
+	</li>
+      </ul>		
+
+      <hr/>
+
+<h2>Lab Work</h2>
+The labs are formative assessements which we strongly encourage you to
+complete. Note that these were designed to help your understanding of
+ML methods.
+
+<h3>Using the machines in Queen's 180</h3>
+
+      <p>
+	Most (not all) of the software we use in this unit is supplied as Python
+	packages bundled with the Anaconda Python package manager. If you are
+	using the machines in Queen's 180 to do the lab exercises (as
+	opposed to using your own machine) you need to do the
+	following to start using Anaconda.
+      </p>
+
+      <ol>
+	<li>
+	  Make sure the machine you are using is running Linux (reboot
+	  if necessary). 
+	</li>
+	<li>
+	  Open up a Terminal window so you have access to the Linux
+	  command line.
+	</li>
+	<li>
+	  Enter the following at the command line: <code>module load
+	    anaconda</code>
+	</li>
+	<li>
+	  Enter the following at the command line: <code>conda init</code>
+	</li>
+	<li>
+	  The <code>conda init</code> command alters
+	  the <code>.bashrc</code> file in your home directory to
+	  ensure that you are using the version of Python provided by Anaconda (have
+	  a look at that file if you want). To get the changes
+	  in <code>.bashrc</code> to take effect the easiest option is
+	  just to kill your terminal window and start up a new one; so
+	  do that. Note that you only need to run <code>conda
+	  init</code> once (unless you change the shell you're using). 
+	</li>
+	<li>
+	  Once you have a new terminal you should notice that your
+	  prompt has changed to include the text <code>(base)</code>
+	  that indicates
+	  which <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Anaconda
+	  environment</a> is currently active.
+	</li>
+	<li>
+	  To access the ML software for this unit you need to use
+	  the <code>coms30035</code> Anaconda Virtual Environment. To
+	  do this type <code>conda activate coms30035</code> at the
+	  command line. Your shell prompt should change from
+	  having <code>(base)</code> to having <code>(coms30035)</code>. 
+	</li>
+	<li>
+	  If you call Python from this shell it should use
+	  the <code>coms30035</code> virtual environment. Common ways
+	  of using Python include:
+	  <ol>
+	    <li> Typing <code>python</code> at the prompt to start the
+	    Python interpreter.
+	    </li>
+	    <li> Typing <code>python somescript.py</code> to execute a
+	    Python script (in this example with the name <code>somescript.py</code>).
+	    </li>
+	    <li> Typing <code>jupyter lab</code> at the prompt to start JupyterLab.
+	    </li>
+	    <li> Typing <code>jupyter lab somenotebook.ipynb</code> to
+	    inspect (and possibly execute) a
+	    JupyterLab notebook (in this example with the name <code>somenotbook.ipynb</code>).
+	    </li>
+	  </ol>
+	</li>
+      </ol>
+      
+      <h3>Using your own machine</h3>
+      
+      <p>If you want to do lab exercises on your own machine then you
+	should
+	install <a href="https://www.anaconda.com">Anaconda</a> on
+	it. If you run into installation problems then feel free to
+	ask the Teaching
+	Staff on the unit for help, but we can't guarantee to solve
+	them.
+      </p>
+
+<h2>Text books</h2>
+
+      <ol>
+          <li> <b>Bishop, C. M., Pattern recognition and machine learning (2006)</b>. This is one of the best ML textbooks and will be <u>our main textbook</u>. The book is freely available <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">here</a>.</li>
+          <!--<li> Coursework: <b>Code + report</b> 40%</li> -->
+          <li> <b>Murphy, K., Probabilistic Machine Learning: An
+          Introduction (2022)</b> and <b>Murphy, K., Probabilistic
+          Machine Learning: Advanced Topics (2023)</b>. We will also
+          use this book series for some topics. These are more recent
+          textbooks and provide a particularly good coverage of
+          probabilistic methods. The books are freely available via <a href="https://probml.github.io/pml-book/">here</a>.</li>
+      </ol>
+
+
+      <h2>Github</h2>
+      <p>All technical resources will be posted on the
+        <a href="https://github.com/uob-COMS30035" target="_blank">COMS30035 Github organisation</a>. If you find any issues, please kindly raise an issue in the respective repository.
+      </p>
+
+      <hr/>
+
+    </div>
+  </body>
+</html>
